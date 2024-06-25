@@ -1,39 +1,46 @@
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra horizontalmente las tarjetas */
+}
+
 .card {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
     padding: 20px;
-    width: 100%;
-    max-width: 800px;
-    justify-content: center;
+    width: calc(50% - 20px); /* Ancho de las tarjetas, considerando el espacio entre ellas */
+    max-width: 400px; /* Ancho máximo para la tarjeta */
+    margin: 10px; /* Margen exterior de las tarjetas */
 }
-.card h1, .card p {
+
+.card h1,
+.card p {
     margin: 0 0 10px;
 }
+
 .profile-card {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
+
 .profile-card .details {
     flex: 1;
 }
+
 .profile-card img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-left: 20px;
 }
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+
 .images img {
-    width: calc(50% - 10px);
+    width: 100%; /* Las imágenes ocupan todo el ancho de su contenedor */
     border-radius: 5px;
 }
+
 .description {
     margin-top: 20px;
 }
