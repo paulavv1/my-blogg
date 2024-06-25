@@ -1,0 +1,37 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+}
+.card h1, .card p {
+    margin: 0 0 10px;
+}
+.profile-card {
+    display: flex;
+    align-items: center;
+}
+.profile-card .details {
+    flex: 1;
+}
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.images img {
+    width: calc(50% - 10px);
+    border-radius: 5px;
+}
+.description {
+    margin-top: 20px;
+}
