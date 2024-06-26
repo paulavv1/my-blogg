@@ -1,26 +1,128 @@
-<div class="card profile-card">
-  <div class="details">
-      <h1>Paula Verdugo</h1>
-      <p>Estudiante de Software 1er Ciclo</p>
-      <p>Correo electrónico: pyverdugo&#64;sudamericano.edu.ec</p>
-      <p>Teléfono: +593 998537537</p>
-  </div>
-  <img src="assets/fotoperfil1.jfif" alt="Foto de Perfil">
-</div>
-<div class="card">
-  <h2>Un poco sobre mi:</h2>
-  <p>Mi nombre es Paula soy una persona que le gusan mucho los atardeceres, los libros, las flores, el frio y  me encantan los cambios, el cafe en una ma;a fria, viajar y decubrir lugares nuevos. Otro de mis
-    hobbies es la actividad fisica, en el gymnasio parcticar pesas lo cual lo deje por un timpo, pero retomare... 
-    Pero ultimamente he viajado a diferentes partes del cajas me gusta mucho las caminatas hacer treking en lugares escondidos del Pais. El que ultimamente he estado trabajando para cumpli mi mayor meta es abrir una tineda online con mi marca persoal, mediantee la carrara de desarrolador de software y trabajar remotamente mientras viajo.
-  </p>
-  <div class="images">
-      <img src="assets/imagen444.jfif" alt="'imagen11">
-      <img src="assets/imagen222.jfif" alt="Imagen 2">
-      <img src="assets/imagen111.jfif" alt="Imagen 3">
-      <img src="assets/imagen333.jfif" alt="Imagen 4">
-  </div>
-  <div class="Un poco de sobre mi:">
-    
-    
-  </div>
-</div>  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 60%;
+            max-width: 10050px;
+        }
+        .card h1, .card p {
+            margin: 0 0 10px;
+        }
+        .profile-card {
+            display: flex;
+            align-items: center;
+        }
+        .profile-card .details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .images img {
+          width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .description {
+            margin-top: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .description img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .description p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .footer-card {
+            display: flex;
+            align-items: center;
+        }
+        .footer-card .details {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .footer-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card profile-card">
+        <img src="assets/fotoperfil1.jfif" alt="Foto de Perfil">
+        <div class="details">
+            <h1>Paula Verdugo</h1>
+            <p>Estudiante 1ro de Sofware</p>
+            <p>Correo electrónico: pyverdugo&#64;sudamericano.edu.ec</p>
+            <p>Teléfono: +593 9562 78973</p>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Galería</h2>
+        <div class="images">
+            <div>
+                <img src="assets/imagen444.jfif" alt="Imagen 1">
+                <p><br>29/Enero/2023<br><br>Fui al Volcan el altar lo cual fue una caminata de trekkig de nivel medio alto, por locual fue una locura ver la hermosa vista en la maravillosa, valio la pena el viaje tan largo </p>
+            </div>
+            <div>
+                <img src="assets/imagen111.jfif" alt="Imagen 2">
+                <p><br>22/Marzo/2023<br><br>Cuenca es una de las ciudades mas hermosas del Ecuador a mi consideracion, ir al bogoli a comer un postre y disfrutar la vista a la ciudad es una de mis actividades favoritas</p>
+            </div>
+            <div>
+                <img src="assets/imagen222.jfif" alt="Imagen 3">
+                <p> <br>12/Mayo/23<br><br>Los fines de semana me gusta disfrutar al aire libre ese dia hicimos una caminata con un grupo muy crevere al cerro Puñay</p>
+            </div>
+        </div>
+        <div class="description">
+            <img src="assets/rectangulo1.jpg" alt="Imagen de Fondo">
+            <p>Las montañas te ayudan a sanar hay que desconectar para volver a conectar contigo, a superarte y a tener confianza en tus decisiones.</p>
+        </div>
+    </div>
+    <div class="card footer-card">
+        <div class="details">
+            <h3>Un poco sobre mi:</h3>
+            <p>Yo me considero una persona observadora, megusta el arte, ir a museos, decublrir lugares nuevos. Soy muy Introvertida pero cuando agarro confianza o me caen bien hablo hasta por los codos, me gusta la tranquilidad, las flores y disfrutar de un cafe pesado en una helada</p>
+        </div>
+        <img src="assets/fotoperfil1.jfif" alt="Foto de Perfil">
+    </div>
+</body>
+</html>
